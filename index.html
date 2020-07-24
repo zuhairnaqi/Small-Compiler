@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compiler</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+        .main_container {
+            padding: 20px 40px;
+        }
+
+        .table {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main_container">
+        <div class="form-group">
+            <label for="code-editor">Code Editor</label>
+            <textarea class="form-control" id="code-editor" rows="3"></textarea>
+        </div>
+        <div class="button_container">
+            <button onClick="compileCode()" type="button" class="btn btn-danger">Compiler My Code</button>
+        </div>
+
+        <!-- Compiler Table -->
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Keywords</th>
+                    <th scope="col">Values</th>
+                    <th scope="col">Symbols</th>
+                    <th scope="col">Identifiers</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+                <!-- Here data will come from compiler -->
+            </tbody>
+        </table>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
